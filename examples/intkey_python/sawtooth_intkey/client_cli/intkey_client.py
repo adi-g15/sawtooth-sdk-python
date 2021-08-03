@@ -43,6 +43,7 @@ class IntkeyClient:
     def __init__(self, url, keyfile=None):
         self.url = url
 
+        print("Starting intkey client")
         if keyfile is not None:
             try:
                 with open(keyfile) as fd:

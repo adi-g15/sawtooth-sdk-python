@@ -48,6 +48,7 @@ RUN mkdir -p /var/log/sawtooth
 
 ENV PATH=$PATH:/project/sawtooth-sdk-python/bin
 
+COPY . /project/sawtooth-sdk-python
 WORKDIR /project/sawtooth-sdk-python
 
 CMD echo "\033[0;32m--- Building intkey-tp-python ---\n\033[0m" \
